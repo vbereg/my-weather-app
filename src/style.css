@@ -1,0 +1,52 @@
+h1 {
+  color: blue;
+}
+
+.override-style {
+  padding: 0.375 rem 0.75 rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1 px solid #ced4da;
+  appearance: none;
+  border-radius: 0.25 rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.large-icon {
+  color: orange;
+  font-size: 100px;
+}
+
+.small-icon {
+  color: orange;
+  font-size: 60px;
+  display: block;
+  margin: 0 auto;
+}
+
+.small-icon2 {
+  color: grey;
+  font-size: 60px;
+  display: block;
+  margin: 0 auto;
+}
+
+p.temperature_style {
+  font-size: 60px;
+}
+
+.centered {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+button.current_location_style {
+  background-color: blue;
+}

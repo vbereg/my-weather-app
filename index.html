@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather application by Vera</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fb02a9d0ae.js"
+      crossorigin="anonymous"
+    ></script>
+   
+  </head>
+
+  <body>
+    <div class="container">
+      <br />
+      <div class="row">
+          <!---
+        <div class="col-2">
+          <button type="button" class="btn btn-warning margin-style">
+            View home city
+          </button>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btn-info margin-style">
+            °C | °F
+          </button>
+        </div>
+--->
+        <div class="col-4">
+          <form id="search-form">
+            <input
+              type="text"
+              placeholder="Enter a city name"
+              class="form-control"
+              autofocus
+              id="search-text-input"
+            />
+          </div>
+          <div class="col-2">
+
+            <input type="submit" value="Search" class="btn btn-success" />
+          </form>
+        </div>
+          <div class="col-2">
+
+            <button class="btn btn-success"id="current_location"/>
+            Current location
+          </button>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-8">
+          <h1 id="current-city">
+            Toronto
+          </h1>
+
+          <h4 id="todays-date">
+            Monday 10:38
+          </h4>
+
+          <h4>
+            Clear
+          </h4>
+        </div>
+      </div>
+      <br />
+      
+
+      <div class="row">
+
+       <!-- <div class="col-3">
+          <i class="fas fa-sun large-icon"></i>
+        
+        </div>-->
+        <div class="col-2">
+          <p class="temperature_style" id="current-temp">
+            10°
+          </p>
+        </div>
+        <div class="col-2">
+            <p class="small_text">
+               <a href="#" id="c-toggle">°C</a> | <a href="#" id="f-toggle">°F</a>
+            </p>
+          </div>
+        <div class="col-3">
+          <p id="humidity-info">
+            <!--Precipitation: 2%
+            <br />-->
+            Humidity: 77%
+          </p>
+          <p id="wind-speed-info">
+          
+            Wind speed: 8 km/h
+          </p>
+        </div>
+      </div>
+
+      <br />
+      <!---
+      <div class="row">
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="centered">Sun.</h2>
+              <i class="fas fa-cloud-sun small-icon"></i>
+              <br/>
+           
+              <p class="centered">
+                <strong>17°</strong> 6°
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+                <h2 class="centered">Mon.</h2>
+                <i class="fas fa-cloud-sun-rain small-icon"></i>
+                <br/>
+             
+                <p class="centered">
+                  <strong>16°</strong> 8°
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+                <h2 class="centered">Tue.</h2>
+                <i class="fas fa-cloud-sun-rain small-icon"></i>
+                <br/>
+             
+                <p class="centered">
+                  <strong>12°</strong> 6°
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+                <h2 class="centered">Wed.</h2>
+                <i class="fas fa-cloud-sun small-icon"></i>
+                <br/>
+             
+                <p class="centered">
+                  <strong>12°</strong> 7°
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+                <h2 class="centered">Thu.</h2>
+                <i class="fas fa-cloud small-icon2"></i>
+                <br/>
+             
+                <p class="centered">
+                  <strong>13°</strong> 11°
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-body">
+                <h2 class="centered">Fri.</h2>
+                <i class="fas fa-cloud-sun small-icon"></i>
+                <br/>
+             
+                <p class="centered">
+                  <strong>15°</strong> 6°
+                </p>
+            </div>
+          </div>
+        </div> --->
+      </div>
+
+      <script src="src/js-data-types.js"></script>
+    </div>
+  </body>
+</html>
